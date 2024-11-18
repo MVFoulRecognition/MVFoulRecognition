@@ -3,9 +3,30 @@
 Since this is a repository for our TFG, only the team members will be contributing. However, we want to ensure a consistent workflow and commit history. 
 
 ## Workflow
+
 We will be using **Gitflow** as our workflow:
 - All work will be done in feature branches created from `develop`.
 - Once a feature is complete, it will be merged into `develop` through a pull request.
+
+## Virtual Environment Configuration (JupyterLab)
+
+To execute this project, it will be necessary to configure a virtual environment, and register it as JupyterLab kernel. Follow this steps:
+
+1. Create a virtual environment:
+    In project's source execute:
+    > python -m venv venv
+2. Activate the virtual environment:
+    > cd venv/Scripts
+    > activate
+3. Install dependencies:
+    > pip install -r requirements.txt
+4. Register kernel in JupyterLab
+    > python -m ipykernel install --user --name=venv --display-name "Python (venv)"
+5. Run JupyterLab and select the kernel:
+    > jupyter lab
+    ![alt text](resources/image.png)
+
+You will be now ready to use JupyterLab with the virtual environment!
 
 ## Commit Message Guidelines
 
